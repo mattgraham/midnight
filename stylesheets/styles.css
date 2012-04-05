@@ -584,6 +584,9 @@ a {
   font-weight: 400;
   text-decoration: none;
 }
+a:hover {
+  color: #ffeb9b;
+}
 
 a small {
   font-size: 11px;
