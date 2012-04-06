@@ -5,3 +5,5 @@ Open source content for Midnight theme. Theme was first designed / developed for
 The Midnight Pages demo is [here](http://mattgraham.github.com/Midnight) 
 
 Theme by [Matt Graham](http://madebygraham.com), twitter [@michigangraham](http://twitter.com/#!/michigangraham)
+
+[Creative Commons Attribution](http://creativecommons.org/licenses/by/3.0/)
