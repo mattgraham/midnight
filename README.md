@@ -1,8 +1,10 @@
 # Midnight
 
-Open source content for Midnight theme. Theme was first designed / developed for GitHub Pages and is availalbe for download, forking and using anywhere else on the web. Like the theme share it with the twitterverse. 
+Open source content for Midnight theme. Theme was first designed / developed for GitHub Pages and is availalbe for download, forking and using anywhere else on the web. Like the theme share it with the twitterverse.
 
-The Midnight Pages demo is [here](http://mattgraham.github.com/Midnight) 
+The Midnight Pages demo is [here](http://mattgraham.github.com/Midnight)
+
+*Note Additional font characters for OpenSans typeface can be found in [v1.1](https://github.com/mattgraham/Midnight/archive/v1.1.zip)
 
 Theme by [Matt Graham](http://madebygraham.com), twitter [@michigangraham](http://twitter.com/#!/michigangraham)
 
