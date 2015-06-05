@@ -632,8 +632,8 @@ blockquote {
 
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+  font-size-adjust: 0.55;
   color: #efefef;
-  font-size: 13px;
   margin: 0 4px;
   padding: 4px 6px;
   -webkit-border-radius: 2px;
@@ -660,6 +660,8 @@ pre {
 }
 pre code {
   color: #efefef;
+  font-size: 13px;
+  font-size-adjust: none;
   text-shadow: 0px 1px 0px #000;
   margin: 0;
   padding: 0;
