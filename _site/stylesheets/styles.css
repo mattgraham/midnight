@@ -68,7 +68,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -537,11 +537,15 @@ table {
   /* Opera/IE 8+ */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 0px 0 20px 0px;
+  padding-bottom: 20px;
   margin: 0px;
-  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f0e7d5;
+  font: 14px/1.47 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
@@ -553,54 +557,76 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e8e8e8;
-  margin: 0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  color: #fff;
 }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 24px;
-}
-
-h4, h5, h6 {
-  color: #e8e8e8;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
-  color: #b6b6b6;
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.7em;
 }
 
 a {
-  color: #ffcc00;
+  color: #ffc107;
   font-weight: 400;
   text-decoration: none;
+  border-bottom: 1px dotted;
+  transition: color 150ms ease;
 }
 a:hover {
-  color: #ffeb9b;
+  color: #ffd453;
 }
 
-a small {
-  font-size: 11px;
+.small {
+  font-size: 12px;
   color: #666;
   margin-top: -0.6em;
   display: block;
+}
+
+.btn {
+  font-size: 14px;
+  color: #fff;
+  background-color: #8bc34a;
+  border: 1px solid #92c755;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  display: inline-block;
+  text-align: center;
+  transition: all 150ms ease;
+}
+.btn:hover {
+  color: #fff;
+  border: 1px solid #84bf3f;
+  background-color: #7eb73d;
+  box-shadow: 0;
 }
 
 ul {
@@ -624,37 +650,29 @@ section img {
 }
 
 blockquote {
-  border-left: 3px solid #ffcc00;
+  border-left: 3px solid #ffc107;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
 }
 
 code {
-  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+  font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
+  background: #191919;
   font-size: 13px;
   margin: 0 4px;
-  padding: 4px 6px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+  padding: 4px 8px;
   border-radius: 2px;
 }
 
 pre {
   padding: 8px 15px;
   background: #191919;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
-  border: 1px solid #121212;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   overflow: auto;
   overflow-y: hidden;
 }
@@ -699,90 +717,50 @@ dt {
   font-weight: normal;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
 #header {
   z-index: 100;
+  position: fixed;
   left: 0;
   top: 0px;
-  height: 65px;
   width: 100%;
-  position: fixed;
   background: url(../images/nav-bg.gif) #353535;
   border-bottom: 4px solid #434343;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
+  overflow: hidden;
 }
-#header nav {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 0 10px;
-  margin: 6px auto;
+#header .nav {
+  float: right;
+  padding: 0;
+  margin: 0;
 }
-#header nav li {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  list-style: none;
-  display: inline;
-  color: white;
-  line-height: 50px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
-}
-#header nav li a {
-  color: white;
-  border: 1px solid #5d910b;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
-  background: -webkit-linear-gradient(#93bd20, #659e10);
-  background: -moz-linear-gradient(#93bd20, #659e10);
-  background: -o-linear-gradient(#93bd20, #659e10);
-  background: linear-gradient(#93bd20, #659e10);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  background-color: #93bd20;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
+#header .nav .download-title {
   display: inline-block;
-  text-align: center;
+  line-height: 36px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 15px;
 }
-#header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
-  background: -webkit-linear-gradient(#749619, #527f0e);
-  background: -moz-linear-gradient(#749619, #527f0e);
-  background: -o-linear-gradient(#749619, #527f0e);
-  background: linear-gradient(#749619, #527f0e);
-  background-color: #659e10;
-  border: 1px solid #527f0e;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-}
-#header nav li.fork {
-  float: left;
-  margin-left: 0px;
-}
-#header nav li.downloads {
-  float: right;
-  margin-left: 6px;
-}
-#header nav li.title {
-  float: right;
-  margin-right: 10px;
-  font-size: 11px;
+#header .nav li {
+  display: inline-block;
 }
 
 section {
-  max-width: 650px;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
   margin-top: 70px;
+}
+section ul li {
+  line-height: 2.4em;
 }
 section #title {
   border: 0;
@@ -791,24 +769,22 @@ section #title {
   padding: 0 0 5px 0;
 }
 section #title h1 {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 40px;
   text-align: center;
+  line-height: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-section #title p {
-  color: #d7cfbe;
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
+section #title h5 {
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 section #title .credits {
-  font-size: 11px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #696969;
-  margin-top: -10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
 }
 section #title .credits.left {
   float: left;
@@ -834,27 +810,17 @@ section #title .credits.right {
   }
 }
 @media print, screen and (max-width: 480px) {
-  section {
-    margin-top: 65px;
+  #header .wrapper {
+    padding: 0 10px;
+    max-width: none;
   }
 
-  #header {
-    position: absolute;
-    height: auto;
-  }
-  #header nav {
-    width: 100%;
-    margin: 0px;
-    padding: 0 4px;
-  }
-  #header nav li.downloads, #header nav li.title {
-    display: none;
-  }
-  #header nav li, #header nav li.fork, #header nav a, #header nav li.fork a {
-    display: inline-block;
-    float: none;
-    margin: 0 auto;
+  .btn {
     padding: 10px;
     width: 100%;
+  }
+
+  .nav {
+    display: none;
   }
 }
