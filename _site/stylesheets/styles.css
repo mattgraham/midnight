@@ -382,7 +382,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -744,6 +744,24 @@ dt {
 }
 #header .nav li {
   display: inline-block;
+}
+
+#footer {
+  position: absolute;
+  bottom: -5%;
+  width: 100%;
+  height: 15%;
+  /* Height of the footer */
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%);
+  /* Safari */
+  background: -o-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%);
+  /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%);
+  /* Firefox 3.6 to 15 */
+  background: radial-gradient(ellipse at center bottom, #008000, rgba(0, 255, 0, 0) 60%);
+  /* Standard syntax */
 }
 
 section {

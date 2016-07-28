@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'OpenSansLight';
     src: url('../fonts/OpenSans-Light-webfont.eot');
@@ -304,6 +303,20 @@ dt {
       display: inline-block;
     }
   }
+}
+
+#footer {
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    height: 15%;
+    /* Height of the footer */
+
+    background: rgba(0, 0, 0, 0); /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%); /* Safari */
+    background: -o-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%); /* Firefox 3.6 to 15 */
+    background: radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 60%); /* Standard syntax */
 }
 
 section {
