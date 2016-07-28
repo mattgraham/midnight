@@ -637,6 +637,10 @@ strong {
   padding: 0 20px;
 }
 
+.center {
+  text-align: center;
+}
+
 section img {
   max-width: 100%;
 }
@@ -776,7 +780,7 @@ section ul li {
 section #title {
   border: 0;
   outline: none;
-  margin: 0 0 50px 0;
+  margin: 0;
   padding: 0 0 5px 0;
 }
 section #title h1 {
