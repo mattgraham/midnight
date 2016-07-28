@@ -755,17 +755,17 @@ dt {
   z-index: -1;
   bottom: -5%;
   width: 100%;
-  height: 15%;
+  height: 20%;
   /* Height of the footer */
-  background: transparent;
+  background: black;
   /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%);
+  background: -webkit-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 65%);
   /* Safari */
-  background: -o-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%);
+  background: -o-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 65%);
   /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 50%);
+  background: -moz-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 65%);
   /* Firefox 3.6 to 15 */
-  background: radial-gradient(ellipse at center bottom, #008000, rgba(0, 255, 0, 0) 60%);
+  background: radial-gradient(ellipse at center bottom, #008000, rgba(0, 255, 0, 0) 65%);
   /* Standard syntax */
 }
 
