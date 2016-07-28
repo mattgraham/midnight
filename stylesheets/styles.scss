@@ -103,6 +103,7 @@
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+$color-white: #eee;
 $color-yellow: #FFC107;
 $color-green: #8bc34a;
 $border-radius: 2px;
@@ -142,14 +143,14 @@ p {
 }
 
 a {
-  color: $color-yellow;
+  color: $color-white;
   font-weight: 400;
   text-decoration: none;
   border-bottom: 1px dotted;
   transition: color 150ms ease;
 
   &:hover {
-    color: lighten($color-yellow, 15%);
+    color: lighten($color-white, 15%);
   }
 }
 
@@ -201,7 +202,7 @@ section img {
 }
 
 blockquote {
-  border-left: 3px solid $color-yellow;
+  border-left: 3px solid $color-white;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
@@ -306,7 +307,8 @@ dt {
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     bottom: -5%;
     width: 100%;
     height: 15%;
