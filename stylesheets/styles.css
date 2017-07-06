@@ -382,7 +382,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -585,14 +585,14 @@ p {
 }
 
 a {
-  color: #FFC107;
+  color: #eee;
   font-weight: 400;
   text-decoration: none;
   border-bottom: 1px dotted;
   transition: color 150ms ease;
 }
 a:hover {
-  color: #ffd454;
+  color: white;
 }
 
 .small {
@@ -637,12 +637,16 @@ strong {
   padding: 0 20px;
 }
 
+.center {
+  text-align: center;
+}
+
 section img {
   max-width: 100%;
 }
 
 blockquote {
-  border-left: 3px solid #FFC107;
+  border-left: 3px solid #eee;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
@@ -746,6 +750,25 @@ dt {
   display: inline-block;
 }
 
+#footer {
+  position: fixed;
+  z-index: -1;
+  bottom: -5%;
+  width: 100%;
+  height: 20%;
+  /* Height of the footer */
+  background: black;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 65%);
+  /* Safari */
+  background: -o-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 65%);
+  /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(ellipse at center bottom, green, rgba(0, 255, 0, 0) 65%);
+  /* Firefox 3.6 to 15 */
+  background: radial-gradient(ellipse at center bottom, #008000, rgba(0, 255, 0, 0) 65%);
+  /* Standard syntax */
+}
+
 section {
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
@@ -757,7 +780,7 @@ section ul li {
 section #title {
   border: 0;
   outline: none;
-  margin: 0 0 50px 0;
+  margin: 0;
   padding: 0 0 5px 0;
 }
 section #title h1 {
