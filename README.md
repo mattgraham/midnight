@@ -8,6 +8,6 @@ The Midnight Pages demo is [here](http://mattgraham.github.com/midnight)
 
 *Note Additional font characters for OpenSans typeface can be found in [v1.1](https://github.com/mattgraham/Midnight/archive/v1.1.zip)
 
-Theme by [Matt Graham](http://madebygraham.com), twitter [@michigangraham](http://twitter.com/#!/michigangraham)
+Theme by [Matt Graham](http://madebygraham.com), twitter [@mattgraham](http://twitter.com/#!/mattgraham)
 
 [Creative Commons Attribution](http://creativecommons.org/licenses/by/3.0/)
